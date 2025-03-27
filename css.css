@@ -1,0 +1,13 @@
+/* Memberikan border pada semua elemen utama untuk memperjelas tampilan */
+.container, .result, .choices { 
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  .hidden { 
+    display: none; /* Untuk menyembunyikan elemen yang belum perlu ditampilkan */
+  }
+  a { 
+    cursor: pointer; 
+    color: blue; 
+  }

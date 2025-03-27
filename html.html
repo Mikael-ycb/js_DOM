@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Input Pilihan</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+  <!-- Container Utama -->
+  <div class="container">
+    <label>Nama : </label><!--Memberi label nama-->
+    <input type="text" id="name" placeholder="Teks Nama"><br><br><!--memberikan kotak untuk input, id mengacu pada id js, dan memberi pesan sementara "Teks Nama"-->
+
+    <label>Jumlah Pilihan : </label><!--memberi label jumlah pilihan-->
+    <input type="number" id="jumlah" placeholder="Jml"><br><br><!--memberi kotak input bertipe number, id jumlah js, dan pesan sementara "Jml"-->
+
+    <button onclick="generateChoices()">OK</button><!--ketika tombol di klik maka akan memanggil method di js-->
+  </div>
+
+  <!-- Container Pilihan -->
+  <div id="choicesContainer" class="choices hidden"><!--id untuk memberikan identitas unik, class untuk css-->
+    <h3>Masukkan Pilihan</h3>
+    <div id="choices"></div>
+    <button onclick="displayOptions()">OK</button>
+  </div>
+
+  <!-- Container Hasil Pilihan -->
+  <div id="optionsContainer" class="hidden">
+    <h3>Pilihan :</h3>
+    <div id="radioOptions"></div>
+    <a onclick="showDropdown()">[Atau dalam bentuk Drop Down]</a>
+    <select id="dropdown" class="hidden"></select><br><br>
+    <button onclick="showResult()">OK</button>
+  </div>
+
+  <!-- Container Hasil Akhir -->
+  <div id="resultContainer" class="result hidden">
+    <p id="result"></p>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>
